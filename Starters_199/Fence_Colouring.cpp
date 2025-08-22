@@ -16,9 +16,10 @@ while(t--){
     }
     int max_freq=0;
     
-    for(auto& [color,count]: freq){
-        max_freq = max(max_freq, count);
+    for(auto&  fir: freq){
+        max_freq = max(max_freq, fir.second);
     }
+
      int cost_1= n - freq[1];
      int cost_2=1 + (n - max_freq);
 
